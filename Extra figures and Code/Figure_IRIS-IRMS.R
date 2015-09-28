@@ -1,0 +1,26 @@
+library(sp) 
+library(raster)
+library(rgdal)
+library(rgeos)
+library(gdalUtils)
+library(igraph)
+library(iterators)
+library(foreach)
+library(gridExtra) 
+#library(EBImage) 
+library(RGraphics)
+library(pixmap)
+library(ggplot2)
+library(extrafont)
+loadfonts()
+
+
+setwd("/Users/cgerlein/Desktop/Summer2014/Foliar_Uptake/Dryout_experiment/cleaned_up")
+IRIS = c(-3.6, 12.1, -0.9, -0.9, -11.1, -1.7, -1.2, -4.9, -16.3, -19.3);
+IRMS = c(-6.5, 6.5, -2.1, -2.5, -14.6, -4.3, -5.7, -7.8, -18.0, -21.8);
+fit.r = lm(formula = IRMS ~ IRIS)
+pdf("plot_garamond.pdf", family="Garamond", width=4, height=4.5)
+plot(IRIS, IRMS,pch = 19, col="black", xlab = "IRIS (permil)", ylab = "IRMS (permil)")
+abline(fit.r, col="black", lwd=3, add=T)
+text(x=-7, y=5, cex=1, "IRMS = 0.92 IRIS - 3.3")
+text(x=-7, y=3, cex=1, expression(R^2==0.98))

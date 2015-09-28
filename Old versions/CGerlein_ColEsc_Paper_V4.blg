@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: CGerlein_ColEsc_Paper_V4.aux
+The style file: apalike.bst
+Database file #1: Paper_FoliarUptake.bib
+You've used 56 entries,
+            1935 wiz_defined-function locations,
+            851 strings with 15902 characters,
+and the built_in function-call counts, 24782 in all, are:
+= -- 2415
+> -- 1209
+< -- 25
++ -- 423
+- -- 420
+* -- 2331
+:= -- 4332
+add.period$ -- 168
+call.type$ -- 56
+change.case$ -- 485
+chr.to.int$ -- 55
+cite$ -- 56
+duplicate$ -- 785
+empty$ -- 1620
+format.name$ -- 506
+if$ -- 4706
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 60
+newline$ -- 283
+num.names$ -- 168
+pop$ -- 382
+preamble$ -- 1
+purify$ -- 490
+quote$ -- 0
+skip$ -- 585
+stack$ -- 0
+substring$ -- 1896
+swap$ -- 60
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 326
+warning$ -- 0
+while$ -- 211
+width$ -- 0
+write$ -- 725

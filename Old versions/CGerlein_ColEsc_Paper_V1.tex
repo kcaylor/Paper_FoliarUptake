@@ -1,0 +1,300 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.3 (9/9/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[twoside]{article}
+\usepackage{graphicx}
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+\usepackage{wrapfig}
+\usepackage[sc]{mathpazo} % Use the Palatino font
+
+\usepackage{amsmath}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.50} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage{lineno}
+\usepackage{putex}
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+%\usepackage{abstract} % Allows abstract customization
+%\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+%\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+\usepackage{newtxtext,newtxmath}
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+%\usepackage{fancyhdr} % Headers and footers
+%\pagestyle{fancy} % All pages have headers and footers
+%\fancyhead{} % Blank out the default header
+%\fancyfoot{} % Blank out the default footer
+%\fancyhead[C]{RCM $\bullet$ November 18$^{th}$ 2014 $\bullet$ Vol. XXI, No. 1} % Custom header text
+%\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Creating high-resolution maps of leaf water isotopes using combined IM-CRDS and IRMS techniques}} % Article title
+
+\author{
+\large
+\textsc{Cynthia Gerlein, Craig J. Sinkler, Kelly K. Caylor}\thanks{A thank you or further information}\\[2mm] % Your name
+\normalsize Princeton University \\ % Your institution
+\normalsize \href{mailto:cgerlein@princeton.edu}{cgerlein@princeton.edu} % Your email address
+\vspace{-5mm}
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+%\maketitle % Insert title
+
+%\thispagestyle{fancy} % All pages have headers and footers
+
+%----------------------------------------------------------------------------------------
+%Page 1: Running head not to exceed 50 characters and spaces; name, address, telephone number, and e-mail address of author(s) to whom all correspondence should be sent.
+%----------------------------------------------------------------------------------------
+
+\newpage
+%----------------------------------------------------------------------------------------
+%Page 2: Title of article, not to exceed 150 characters and spaces; all authors' full names (necessary for accurate indexing and abstracting); institution address(es); and a summary of the most important findings and/or advance set out in the article.
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+\textbf{\Large{Water status of hydrophobic leaves improved by the impact of artificial dew deposition on leaf energy balance}}\\
+~\\
+Cynthia Gerlein-Safdi$^1$, Kelly Krispin Caylor$^1$, Craig James Sinkler$^2$\\
+~\\
+$^1$ Princeton University, Department of Civil and Environmental Engineering, \\E-208 E-Quad, Princeton, NJ 08544, USA\\
+$^2$ Rider University, 2083 Lawrenceville Road, Lawrenceville, NJ 08648, USA\\
+~\\
+~\\
+\textbf{{One-sentence summary}} \\
+Non-meteoric water deposition on hydrophobic \textit{Colocasia esculenta} leaves relieves leaf water stress by modifying the leaf energy balance.
+\end{center}
+
+
+
+\newpage
+%----------------------------------------------------------------------------------------
+%Page 3: Footnotes in the following order: financial source (if any) and the experiment station or institution paper number (if any); present address(es) of authors if different from heading; corresponding author with e-mail address.
+%----------------------------------------------------------------------------------------
+
+\newpage
+%----------------------------------------------------------------------------------------
+%Page 4: Abstract (include genus and species).
+%----------------------------------------------------------------------------------------
+\textbf{\large{Abstract}}
+\newpage
+%----------------------------------------------------------------------------------------
+%Page 5 and subsequent pages: The text, comprising Introduction (not to exceed 10,000 words for a Research Article), Results, Discussion, and Conclusions, Materials and Methods, and Acknowledgments.
+%----------------------------------------------------------------------------------------
+
+%\begin{multicols}{2} % Two-column layout throughout the main article text
+\begin{linenumbers}
+\subsection{Introduction}
+The uptake of carbon dioxide by vegetation is a major sink of CO$_2$ and a factor that will determine future climate. Some studies predict a decrease in carbon uptake from vegetation \cite{Raupach:2013iz} because of a general drying of the southern hemisphere, including some tropical areas \cite{Zhao:2010cp}. A mechanistic understanding of land-atmosphere carbon exchanges at the individual and regional scales is necessary to build a comprehensive carbon budget at the global scale and determine whether one can already observe this decline \cite{Ballantyne:2012bk}. 
+
+Because they have optimal temperature and rainfall conditions for vegetation growth, the tropics play a major role in carbon uptake \cite{Osborne:2012wl}.  However, their future is subject to more debate than any other part of the planet \cite{Cox:2013dn, Huntingford:2013cs} . The difficulty in assessing the response of tropical wet forests to climate change comes from the proximity of the mean annual precipitation (MAP) of these areas to 2000~mm/year. If the MAP is above $\sim$2000~mm/y, the vegetation growth is limited by the lack of sunlight (radiation-controlled ecosystems), while if the MAP is below this level, it is limited by water scarcity (water-controlled ecosystems). The predicted climate changes will bring the MAP in some of these areas from above to below this threshold \cite{Guan:2015hq}. It is therefore crucial for the global modeling effort to assess which areas will be transitioning to water-controlled ecosystems and what implications this will have on their carbon uptake rate.
+
+At the global scale, climate models predict an increase in the number of drought events in some part of the globe, including in the tropics \cite{Neelin:2003db}. Plants absorb CO$_2$ through their stomata, which are small openings on their leaves. In the process, water vapor may escape through the opened stomata \cite{Buckley:2005bf}. Measuring this flux of water vapor, called transpiration, is therefore an effective method for estimating carbon uptake by vegetation. Severe droughts in tropical areas impact global levels of CO$_2$ not only because of the resulting tree loss, but also because trees shut down their stomata to limit water vapor losses that may induce cavitation and permanent damage. This shutdown results in a decrease in carbon uptake. Only a precise knowledge of the water sources that plants have access to would allow one to predict this shut down with accuracy. However, water sources in the tropics vary significantly between the wet and dry seasons and are poorly understood. For example, vegetation in tropical forests have been known for a long time to be using fog \cite{Stanton:2013cr, Eller:2013km}, dew  \cite{Andrade:2003ck, Clus:2008eh, Lakatos:2012ja} and other non-meteoric atmospheric water sources through foliar uptake. The literature suggesting this importance of this mechanism is growing \cite{Berry:2014gd, Berry:2014wk} and includes a wide range of plant species. However, many tropical species are known for having very hydrophobic leaves \cite{Neinhuis:1997vb}. In areas where the relative humidity is high, for example in the understory, preventing water from stagnating at the surface of the leaf helps to prevent it from rotting or the developing armful fungus. Those species are most likely not adapted to uptake water from the leaves. 
+
+In this study, we present three experiments that focus on the effects of water droplets deposition at the surface of \textit{Colocasia esculenta} leaves. This specie is native from South East Asian tropical forests but has been cultivated across the world, including Brazil, for many centuries. With a contact angle of 164$^\text{o}$ \cite{Neinhuis:1997vb}, \textit{Colocasia esc.} is considered to have highly water-repellent leaves. Its leaves can reach a size of up to 50~cm in length and 40~cm in width, allowing for high-resolution mapping of the leaf water properties. Using isotopically labelled water as well as traditional plant physiology techniques, we confirm that the \textit{Colocasia esc.} leaves do not uptake water from the surface of the leaves. We also show that water droplets deposition decreases leaf transpiration and increases water potential. We conclude by presenting three mechanisms that explain the influence of water deposition on water-repellent leaves.
+% Despite its importance, this process has yet to be included in land-surface models.
+
+%-------------------------------------------------------------------------------------------------------
+\subsection{Methods}
+\subsubsection{The added value of stable isotopes}\label{iso}
+Stable isotopes of water hold great potential for resolving transpiration and evaporation fluxes accross multiple scales \cite{Griffis:2010jt, Rothfuss:2012ep, Wang:2013ee}. The process of evaporation is accompanied by a high degree of isotopic fractionation that leads to evaporated water with an isotopic composition depleted in the heavy isotopologues H$_2^{18}$O and HD$^{16}$O, where D symbolizes deuterium. This is due to the difference in vapor pressure of the different isotopologues \cite{Farquhar:2006cc}. Isotopic compositions are commonly expressed in terms of the relative ratios
+$$\delta_i = \left(\frac{R_i}{R_{r_i}}-1\right)\times 10^3$$ 
+of isotope ratios \cite{Mook}, where $\delta_i$ is expressed in \textperthousand~and the index $i$ stands for $^{18}$O or D.  
+\mbox{$R_{^{18}O} = [{H_2}^{18}O]/[{H_2}^{16}O]$} and \mbox{$R_{D} = [HDO]/[H_2O]$} are the isotope ratios, while the $R_{r_i}$ are the ratios of the corresponding standard.  For water, the reference is the Vienna Standard Mean Ocean Water (VSMOW). 
+%The fractionation factor, usually noted $\alpha$, describes the isotopic fractionation associated with a reaction or a phase transition. For example, the isotope fractionation factor of water associated with going from the vapor to the liquid phase is defined as:\mbox{$\alpha={R_i}_{\text{liquid}}/{R_i}_{\text{vapor}}$}. Fractionation factors are mostly dependent on temperature. Many empirical relations are available in the literature \cite{Merlivat:1978hk, Horita:1994uf}
+Deuterium excess (d-excess) is a widely used measure of how evaporated a pool of water (ocean, lake, leaf) is and is defined as: 
+$$\text{d-excess} = \delta \text{D} - 8 \times \delta^{18}\text{O}.$$
+The average d-excess for precipitation is 10. Lower d-excess values generally indicate that the pool undergone some evaporation \cite{Brooks:2014hd}. Stable isotopes are also very efficient in helping identify different water sources in plants \cite{EHLERINGER:1992wz}. %Groundwater is usually very depleted in heavy isotopes compared to rainwater, because surface water is continuously evaporating until it reaches the aquifer. It is for example possible to distinguish deep-rooted trees from shallow-rooted bushes by looking at the isotopic composition of their respective transpiration \cite{Flanagan:1991wv}. 
+Kinetic isotope effects associated with the difference in diffusivity of the different isotopologues of water can lead to different isotopic composition \cite{Farquhar:2006cc}. Simple mixing models allow one to separate the composition and the fluxes coming from different sources. For this reason, stable isotopes are great natural labels that can be used to track pathways of water within plants without harming them. 
+
+\subsubsection{Experiment 1a: Effects of dew deposition on Colocasia esc. water isotopes in natural conditions}
+ This first experiment examins leaf scale spatial and temporal patterns of water isotopes induced by the presence or the absence of dew under drought condition. Six bulbs of \textit{Colocasia esculenta} were planted in separate pots. All pots were placed outside and received full sun for four weeks. During this time, all plants were heavily watered with tap water to allow plant growth. Once the six plants reached maturity, watering stopped and the plants were moved to a shaded area to remove any sun exposition difference between the plants. Three of the six pots were left to dry and did not receive any water for the rest of the experiment. The upper surface of the leaves of the other three pots were misted with isotopically enriched water ($\delta^{18}$O = 8.85~\textperthousand, $\delta$D = 737.64~\textperthousand) every two days using a spray bottle. All of the extra water would run off the leaves, leaving them covered in submillimeter size droplets, which is a realistic size for dew deposition drops \cite{Defraeye:2013jm}. The misting simulated dew and occurred as early as possible in the morning. In order to avoid contact between the misted water and the soil in the pots, the surface of all pots was covered in wrapping plastic. Six leaves were collected between the beginning of the drought/dew treatments and the end of the experiments, three weeks later. The sampling and the analysis are described in Section \ref{tech}.
+ 
+ \subsubsection{Experiment 1b: Effects of water droplets deposition on \textit{Colocasia esc.} leaf water isotope under high water stress conditions}
+This second experiment was designed to artificially increase the contrast between the drought and misted treatments from Experiment 1. Two leaves of similar size and of the same \textit{Colocasia esc.} plant were cut at the junction of the petiole and the rachis and left to dry 80 cm under a blue light (Eiko 1960 EBW, 500 W, 10500~lumens, color temperature of 4800~K). One leaf was misted with isotopically labelled water ($\delta^{18}$O~=~8.85~permil, $\delta$D~=~737.64~permil) every half-hour. The other leaf was left to dry without any intervention. After four hours, samples were collected from both leaves as described in Section \ref{tech}.
+ 
+ \subsubsection{Experiment 2: Effects of dew deposition on Colocasia esc. leaf water potential under high water stress conditions}\label{dry}
+In this final experiment, we focused on the effect of water droplets deposition on leaf water potential under high water stressed conditions. One leaf was cut at the junction of the petiole and the rachis and left to dry. Three different water stress conditions were tested here: natural drying, high heat drying and high heat \& mist. In the high heat case, the leaf was placed 80 cm under a blue light (Eiko 1960 EBW, 500 W, 10500~lumens, color temperature of 4800~K) and left to dry for up to 10 hours. In the high heat \& mist case, the leaf was also misted with ultra pure water every hour using a spray bottle. Again, surplus water was allowed to runoff, leaving the leaf covered in submillimeter size water droplets. Leaf disks of 1~inch diameter were collected every hour to two hours. The surface of the leaf disks was sanded with a fine sandpaper (??????) and the water potential analyzed on a WP4C (Decagon Devices Inc.). 
+%Leaf stomatal conductance and disk weight are also collected. Infrared pictures of the leaves are taken after each sampling. Air temperature and relative humidity in the lab are monitored throughout the experiment.
+
+\subsubsection{Sampling and processing methods for the isotopic analysis}\label{tech}
+For the water isotope analysis, each analyzed leaf was sampled in 12 to 25 different locations depending on the size of the leaf. All the sampling points were located on the same half of the leaf and consisted in four holes (6~mm diameter) punched next to each other forming a square. Each hole was punched as quickly as possible to avoid evaporation, which would influence the isotopic composition of the neighboring holes. Each leaf disk was then secured in an aluminum foil and inserted in a sealed vial. The entire leaf was sampled in one go and as fast as possible. The prepared vials were then stored in the fridge until being analyzed. 
+The leaf samples were analyzed using an Induction Module (IM) combined to a Cavity Ring Down Spectrometer (CRDS) L2103-i from Picarro Inc. (Sunnyvale, CA, USA). The IM was set on the "normal leaf" setting: the leaf disks did not appear carbonized and after being dried in the oven at 60$^o$C for 48~hours, they show no decline in weight, proving that this setting dried the leaf samples completely. The IM was equipped with a micro-combustion module (MCM). The MCM has been proven to efficiently reduce the interferences due to the presence of organics in water samples extracted from plants (Kate Dennis, private communication). 
+
+\paragraph{IM-CRDS analysis sequence} The analysis sequence was based on \cite{vanGeldern:2012cp}. Following their notation, Table \ref{sequ} presents the sequence of standards and samples. Six empty vials were run at the beginning of each run. The average water vapor content, $\delta^{18}$O and $\delta$D for the six vials was measured and introduced in a mixing model that allowed us to retrieve the true isotopic composition of the samples. Reference water samples were run using the paper filter provided  with the instrument and the same piece of filter paper was reused for all the injections of a single reference water. We found that 3~$\mu$L of reference water were necessary to reproduce the amount of water contained by one punch hole of \textit{Colocasia esc}. The data was corrected for drift, memory effect and correction back to the VSMOW scale. The central vein and the half of the leaf that had not been sampled for IM-CRDS analysis were placed in a vial and the water extracted using cryogenic vacuum distillation. The water was then analyzed both by Isotope Ratio Infrared Spectrometry (IRIS) and Isotope Ratio Mass Spectrometry (IRMS) for comparison with the IM-CRDS.
+\paragraph{IRIS and IRMS analysis}
+Ten samples were sent to the Center for Stable Isotope Biogeochemistry at the University of California in Berkeley for IRMS analysis. For the IRMS method, $\delta $D was obtained by chromium combustion using an H/Device (labelled as HDEV; Thermo Finnigan, Bremen). Microliters of water were injected in the HDEV and reduced to H$_2$ gas. The ratio of D/H was then measured on a Thermo Delta Plus mass spectrometer.% with a precision of $\pm$ 0.8~\textperthousand.  
+%We use the method described in the Thermo GAS Bench II operating manual, ThermoQuest, Oct 1999. 
+ For the $\delta^{18}$O analysis, water for both standards and samples were pipetted into glass vials and quickly sealed. The vials were then purged with 0.2\% CO$_2$ in Helium and allowed to equilibrate at room temperature for at least 48 hours. The $^{18}$O in the CO$_2$ was then analyzed by continuous flow using a Thermo Gas Bench II interfaced to a Thermo Delta Plus XL mass spectrometer. In this H$_2$O-CO$_2$ equilibration method, the dissolved components (organic and/or inorganic) do not affect the values of $\delta^{18}$O.
+%Long-term external precision is normally better than  ± 0.10ä. 
+For the IRIS analysis, 1.8~$\mu$L of water were injected into a vaporizer and the vapor pushed through a MCM. The concentrations of H$_2^{18}$O and HD$^{16}$O were measured on a water isotope analyzer (L2103-i) from Picarro Inc. (Sunnyvale, CA, USA). 
+
+The ten samples analyzed both by IRMS and IRIS were used to calculate the offset between both analysis methods. All the samples that had been run exclusively by IRIS or IM-CRDS were then corrected for this offset. The IM-CRDS method has not been widely used yet and protocols and precision analysis are still absent from the scientific literature. In order to justify the values obtained using the IM-CRDS, we compared the values obtained from the extracted water of the half-leaf analyzed by IRIS to the average leaf water composition obtained using a nearest neighbor interpolation on the half-leaf analyzed by IM-CRDS. For the seven leaves analyzed by IM-CRDS, the average difference between those two methods was 2.6\textperthousand~ in $\delta^{18}$O and 3.4\textperthousand~ in $\delta$D. These values are higher than the average difference we observed between two halves of the same \textit{Colocasia esc.} leaf, both extracted by cryogenic vacuum distillation and analyzed by IRIS (0.3\textperthousand~ in $\delta^{18}$O and 1.9\textperthousand~ in $\delta$D). Further testing is clearly necessary before using the IM-CRDS technique as an absolute method. However, our goal here is to compare strongly enriched waters and the order of the differences presented in the next section are up to two orders of magnitude bigger than the error observed for the IM-CRDS. We therefore believe that the IM-CRDS is an appropriate method here, as it allowed us to quickly process many small samples,  therefore increasing the spatial resolution of our analysis.
+
+%------------------------------------------------------------------------------------------------
+
+\subsection{Results}\label{results}
+%We demonstrate through several lines of evidence that dew deposition on the surface of \textit{Colocasia esc.} leaves allow to relieve water stress by decreasing evaporative demand. 
+Figure \ref{expe1a} presents the evolution of the isotopic composition of leaves from the drought and misted plants in Experiment 1a. All the maps of both $\delta ^{18}\text{O}$ and $\delta \text{D}$ show the expected progressive enrichment of leaf water when moving away from the main stem towards the rims of the leaf \cite{Cernusak:2013fx}. This enrichment is due to the progressive evaporation of the leaf water as it moves away from the source water that enters the leaf through the petiole. The lighter isotopologues are evaporated first, leaving the heavier ones in the leaf \cite{Farquhar:2006cc}. The third column of Figure \ref{expe1a} shows the corresponding d-excess. Again, the increase in evaporation at the rims, characterized by lower d-excess values, is apparent. Those results reinforced our confidence in the IM-CRDS method. The average composition of each leaf is summarized in Table \ref{Maps_Average}. Because the plants were kept outside during the experiment, the day to day variations in temperature and relative humidity both influenced the transpiration rate as well as the isotopic composition. However, comparing same day results for both treatments, we see that the dew treated plants systematically exhibit higher d-excess values than the drought treated ones. The lower d-excess values are associated with higher transpiration rate. On the other hand, the misted leaves had a lower rate of transpiration, which led to higher values of d-excess.
+
+Similar maps were produced for Experiment 1b (Figure \ref{expe1b}). In this case, the heat lamp artificially increased the transpiration rate in both leaves, leading to highly enriched $\delta^{18}$O and $\delta$D values and very low d-excess values for both treatments. However, the d-excess in the drought case is a lot more negative (reaching values down to $\sim$-800~\textperthousand) than for the dew treated leaves (reaching values down to $\sim$-300~\textperthousand). This experiment was merely an extreme version of Experiment 1a, with the objective of accentuating the contrast between the two treatments. While the high heat treatment led to a strong dry out of some areas of the leaf, in particular those far away from the central vein, the large differences observed between the drought and the misted treatments do confirm the results of Experiment 1a.
+
+Finally, Experiment 2 was design to look at the temporal evolution of water potential in artificially drying leaves (see Figure \ref{expe2}). Strong differences in drying pattern are shown for the misted or non misted leaves. In both the natural drying and the the high heat \& mist cases, the leaf water potential experiences a slow decline, which is best approximated by a linear function. However, the high heat treated leaves experience a faster decline and are best approximated by a parabola. Without the results of Experiments 1 and 2, that confirmed the leaves high hydrophobicity, this results could easily be mistaken for a foliar uptake process. Large differences in water potential patterns were also observed as a function of leaf size: both the high heat and the high heat \& mist treatments had a stronger decline in water potential for small leaves than for big leaves. 
+
+%------------------------------------------------------------------------------------------------
+
+\subsection{Discussion}
+Dew and fog have been shown to have a direct impact on plants water status through direct uptake of water from the leaves or needles \cite{Stanton:2013cr, Eller:2013km, Clus:2008eh, Lakatos:2012ja, Berry:2014gd, Berry:2014wk}. As mentioned before, \textit{Colocasia esculenta} is native to tropical wetlands and posses highly hydrophobic leaves \cite{Neinhuis:1997vb} that allow the plant to prevent the development of fungus. This is confirmed by Experiments 1a and 1b in which the misted leaves all exhibit lower isotopic enrichment in $^{18}$O and D as the drought treated leaves. This is the sign that non of the highly enriched sprayed water is being uptaken by the leaves, even in artificially dry and hot conditions. 
+However, despite the leaf's hydrophobicity and the absence of foliar uptake, submillimeter size droplets of water do stay attached to the surface of the leaf and allow it to decrease its transpiration rate and maintain its water potential. The water balance of the leaf is therefore influenced by the change in energy balance associated with the water droplets deposited at the surface. The influence of these water droplets is triple. First, the droplets increase the albedo of the leaf, allowing more of the radiations to be reflected away from the leaf. Second, part of the oncoming energy will be dissipated through the evaporation of the droplets, which also provides evaporative cooling to the surface of the plant. Finally, the evaporated droplets allow to increase the boundary layer \cite{Defraeye:2013jm} and locally decrease vapor pressure deficit (VPD), creating a moister environment around the leaf. 
+
+While the first two mechanisms will have a homogenous impact on all leaves, the third mechanism proposed will be leaf size dependent. This is confirmed  by the leaf size dependent behavior observed for the misted case of Experiment 2 (see Figure \ref{expe2}): if only the first two mechanisms were at play, one would not expect a difference between two leaves of different size receiving mist. However, bigger misted leaves will create a larger micro-climate, increasing the length of the boundary layer and therefore decreasing the VPD even further than a small leaf could \cite{Defraeye:2013jm}. This lower VPD then induces a decrease in transpiration and an increase in water potentialntial, as it is the case in Experiment 2.
+
+Water droplets from rain interception will have a similar effect. However in this case the soil water would also be replenished, making the gain in water obtain by lowering transpiration less necessary than in the case of dew or fog droplets forming during a drought. Many studies have indeed demonstrated that dew or fog deposition had little impact on well watered plants \cite{Andrade:2003ck, Eller:2013km}. Dew and fog  commonly occur all around the world and in a wide range of ecosystems, from drylands \cite{Agam:2006ew} to tropical forests \cite{Lakatos:2012ja}. Indeed, regular dew formation has been observed by scatterometer in the upper canopy of the Amazon forest, even during the dry season \cite{Satake:cw, Frolking:2011di}. %Many tropical species are highly repellent to water for the same reasons as \textit{Colocasia esculenta}. 
+\cite{Frolking:2011di} observed a sharp decrease in morning backscatter over the Amazon forest for the summer months of 2005, which they associated with a lack of morning dew formation. This summer was known as a mega-drought for the Amazon forest and led to a high tree mortality \cite{Zeng:2008gh}. However, the accumulating water deficit anomaly for that year was just as high as that of the year 2002, which did not experience the same tree mortality. The main difference in water resources between the two years appears to be the presence or absence of dew. 
+
+The results of our study hint at a large impact of water droplets deposition on hydrophobic leaves in time of drought. The influence of the water droplets on the leaf energy balance will delay the time when leaves will reach their maximum transpiration rate. \cite{Abtew:2012vd} calculated that dew evaporation from the surface of a leaf takes about 75~min in southern Florida. Many parameters, including leaf size, relative humidity or shading could potentially prolong this time. In the context of climate change and with an increasing number of drought in some tropical forests, and in particular the Amazon forest \cite{Cook:2014ks}, even a small delay in the beginning of the transpiration in the morning could have a huge impact when spanning over the whole dry season and, for example, the entire Amazon forest. While tropical forests are usually carbon neutral, \cite{Gatti:2015gq} calculated that during the 2010 mega-drought in the Amazon, the basin lost 0.48 PgC.yr$^{-1}$. This corresponds to about 10\% of the amount of anthropogenic carbon released in the atmosphere for that year. Understanding all the aspects of plant functions in topical forests is therefore crucial if we want to better anticipate future climate. Despite its potentially large impact, dew and fog deposition on plants is yet to be include in climate models. Further investigation is now necessary to quantify the transpiration decrease associated with water droplets deposition, as well as the impact on leaf carbon uptake. Combining a process-based model with flux tower and satellite data could help better quantify regional scale carbon uptake. 
+
+\end{linenumbers}
+\newpage
+%----------------------------------------------------------------------------------------
+%6. Literature Cited.
+%----------------------------------------------------------------------------------------
+\bibliographystyle{apalike}
+\bibliography{Paper_FoliarUptake}
+%\end{multicols}
+
+\newpage
+%----------------------------------------------------------------------------------------
+%7. Figure legends.
+%----------------------------------------------------------------------------------------
+
+\newpage
+%----------------------------------------------------------------------------------------
+%8. Tables with brief and concise titles and legends.
+%----------------------------------------------------------------------------------------
+\begin{table}
+\centering
+\begin{tabular}{llr}
+\toprule
+\multicolumn{2}{c}{Identifiers} \\
+\cmidrule(r){1-2}
+ID & Type & Injections \\
+\midrule
+Blank 1& Empty vial& $1$\\
+to& &\\
+Blank 6& Empty vial& $1$\\
+DEST & Drift ref. water& $10$ \\
+HIS & High ref. water & $10$ \\
+ANTA & Low ref. water & $10$ \\
+DEST & Drift ref. water& $10$ \\
+HERA & QC ref. water& $4$ \\
+Sample 1& Sample & 4\\
+to & &\\
+Sample 10 &Sample & 4\\
+DEST & Drift ref. water& $6$ \\
+Sample 11&Sample & 4\\
+to & & \\
+Sample 20 & Sample & 4\\
+DEST & Drift ref. water& $6$ \\
+\bottomrule
+\end{tabular}
+\caption{Typical sequence layout of an IM-CRDS run with four reference waters. Following \cite{vanGeldern:2012cp}, HIS and ANTA are the names of the reference waters with high and low delta values, DEST and HERA are intermediate waters. DEST is the drift monitoring reference water whereas HERA is the treated as a sample for quality control. All reference waters except HERA are used for memory correction.}
+\label{sequ}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{ccccc}
+\toprule
+Day & Treatment & $\delta^{18}$O (\textperthousand) & $\delta$D (\textperthousand) & d-excess (\textperthousand) \\
+\midrule
+0& & 20.0 & 24.1 & -136.1\\
+14& Drought & 13.3 & -1.5 & -108.0\\
+14 & Dew & 15.3 & 20.32 & -102.4\\
+20& Drought & 23.0 & 15.1 & -169.0\\
+20 & Dew & 13.4 & -2.7 & -109.6\\
+\bottomrule
+\end{tabular}
+\caption{Average leaf isotopic composition obtained by nearest neighbor interpolation for each of the leaves presented in Figure \ref{expe1a}.}
+\label{Maps_Average}
+\end{table}
+
+\newpage
+%----------------------------------------------------------------------------------------
+%9. Original figure files.
+%----------------------------------------------------------------------------------------
+\begin{center}
+\begin{figure}
+\centering
+\vspace{-1.2in}
+\includegraphics[width=9cm]{AllMaps.pdf}
+\vspace{-0.5in}
+\caption{Maps of five \textit{Colocasia esc.} leaves collected throughout Experiment 1. All leaves are about 38~cm long. The first column shows $\delta^{18}$O, the second $\delta$D and the last column shows d-excess. Row 1 shows the isotopic composition of a leaf on day 0. Rows 2 and 4 shows leaves from the drought treatment collected at days 14 and 20, respectively. Rows 3 and 5 show leaves collected on similar days but from the sprayed treatment, where the leaves where sprayed with isotopically enriched water ($\delta^{18}$O = 8.85~\textperthousand, $\delta$D = 737.64~\textperthousand) every two days. The color scheme is the same for all rows and the values are expressed in permil.}\label{expe1a}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=17cm]{Dec1stExpe.pdf}
+\caption{Maps of two leaves left to dry under a 500W blue light. The top row shows $\delta^{18}$O, $\delta$D and d-excess of the non-sprayed leaf. Bottom row shows the same for a leaf sprayed with isotopically enriched water ($\delta^{18}$O = 8.85~\textperthousand, $\delta$D = 737.64~\textperthousand) every half-hour.}\label{expe1b}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=10cm]{Dryout_with_small.pdf}
+\caption{Five examples of the temporal evolution of leaf water potential of \textit{Colocasia esc.} leaves. Natural dryout (green) and high heat \& dew (blue and charcoal) cases are best fitted by a linear relation. The high heat drying (red and pink) cases are bets fitted by a parabola. ``Small leaf" refers to 38~cm long leaves. All other leaves are 45~cm long. }\label{expe2}
+\end{figure}
+
+
+
+\end{center}
+\newpage
+%----------------------------------------------------------------------------------------
+%10. Supplemental data files.
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
+
+%\subsection{Experimental setup}
+%Six bulbs of \textit{Colocasia Esculenta} were grown planted in individual pots (approx June 10th 2014) and left to grow outside in a well protected area. During their growing periods, the sapling received morning sun and were kept well watered both by rain and tap water [ADD ISOTOPE VALUES]. Once they had reach maturity, the pots were moved a roofed area (on July 10th 2014). They were watered one last time that day. One leaf was collected on July 11th and analyzed for mapping (12 locations). This leaf will be considered our initial conditions. The six pots received two different treatments: three pots were sprayed every two days with isotopically labeled water [ADD ISOTOPE VALUES] starting on July 12th 2014 while the other three did not receive any water. Stomatal conductance was recorded every two days in each group. All the pots were covered in order to avoid any contact between the isotopically labelled water and the soil. A labelled leaf (Pot 6) was collected on July 14th and another one on July 22nd.
+%\subsection{Leaf sampling protocol}
+%Leaves were sampled in early morning, providing comparable leaf state between sampling days. The sampled leaf would be cut in two along the side of main vein. The half of the leaf containing the main vein was set aside in a sampling tube. The water was extracted by cryogenic extraction and the water analyzed for water isotopes on a Picarro L2130-i and on a mass spectrometer. The other half was punched in multiple location covering the entire leaf. One location would be punched four times in order to allow for memory effect correction. The punch holes would be put into an air tight vial and left in the fridge until analysis. The analysis of the pouch holes was done on a Picarro IM-CRDS. This protocol was first tested on another leaf (Frist, July 9th).
+%\subsection{Leaf mapping}
+%The average location of the four punch holes per location was recorded and isoscapes of the leaves were calculated using inverse distance method and krigging methods in R.
+%
+

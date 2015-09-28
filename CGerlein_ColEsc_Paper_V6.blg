@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: CGerlein_ColEsc_Paper_V6.aux
+The style file: apalike.bst
+Database file #1: Paper_FoliarUptake.bib
+Warning--can't use both author and editor fields in Farquhar1989
+Warning--can't use both author and editor fields in Farquhar1993
+Warning--can't use both author and editor fields in MonteithDew
+You've used 82 entries,
+            1935 wiz_defined-function locations,
+            1024 strings with 21485 characters,
+and the built_in function-call counts, 36187 in all, are:
+= -- 3532
+> -- 1708
+< -- 44
++ -- 593
+- -- 590
+* -- 3388
+:= -- 6282
+add.period$ -- 247
+call.type$ -- 82
+change.case$ -- 695
+chr.to.int$ -- 81
+cite$ -- 85
+duplicate$ -- 1171
+empty$ -- 2407
+format.name$ -- 722
+if$ -- 6919
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 91
+newline$ -- 413
+num.names$ -- 246
+pop$ -- 557
+preamble$ -- 1
+purify$ -- 705
+quote$ -- 0
+skip$ -- 872
+stack$ -- 0
+substring$ -- 2795
+swap$ -- 108
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 472
+warning$ -- 3
+while$ -- 308
+width$ -- 0
+write$ -- 1062
+(There were 3 warnings)
